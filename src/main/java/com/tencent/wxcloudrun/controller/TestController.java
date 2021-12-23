@@ -41,5 +41,11 @@ public class TestController {
         return ApiResponse.ok("EdenWang");
     }
 
+    @GetMapping(value = "/api/callback")
+    String callback() {
+        logger.info("/api/callback get request");
+        return "SUCCESS";
+    }
+
 
 }
